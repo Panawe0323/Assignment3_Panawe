@@ -1,4 +1,4 @@
-import torch
+'s trimport torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from torch import nn, optim
@@ -46,7 +46,7 @@ def train_model(model, train_loader, loss_fn, optimizer, epochs=10):
 
         print(f"Epoch {epoch+1}/{epochs} completed.")
 
-# Training and Saving Weights
+# Let's train and save the weights
 train_model(model, train_loader, loss_fn, optimizer, epochs=10)
 torch.save(model.state_dict(), 'fashion_mnist_model.pth')
 print("Model weights saved to 'fashion_mnist_model.pth'")
