@@ -19,7 +19,7 @@ class FashionNN(nn.Module):
         x = self.fc3(x)
         return x
 
-# Loading Saved Model
+# Loading the Model
 model = FashionNN()
 model.load_state_dict(torch.load('fashion_mnist_model.pth'))
 model.eval()
