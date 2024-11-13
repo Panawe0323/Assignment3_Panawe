@@ -1,4 +1,4 @@
-'s trimport torch
+import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from torch import nn, optim
